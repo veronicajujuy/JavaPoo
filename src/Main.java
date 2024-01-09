@@ -3,17 +3,18 @@
 public class Main {
     public static void main(String[] args) {
         // esto es igual a la definición de abajo
-        // Doctor myDoctor;
-        // myDoctor = new Doctor();
-        Doctor myDoctor = new Doctor();
-        myDoctor.name ="Dr. Alejandro Rodriguez";
-        myDoctor.showName();
+       Doctor myDoctor = new Doctor("Dr. Pablo Menendez", "Gastroenterólogo");
+        System.out.println("myDoctor.name = " + myDoctor.name);
+        System.out.println("myDoctor.speciality = " + myDoctor.speciality);
         myDoctor.showId();
-        System.out.println(Doctor.id);
 
-        Doctor myDoctorAnn = new Doctor();
-        myDoctorAnn.showId();
-        System.out.println(Doctor.id);
+        Doctor myDoctor2 = new Doctor("Dr. Carlos Santos", "Reumatólogo");
+        System.out.println("myDoctor2 = " + myDoctor2.name);
+        System.out.println("myDoctor2 = " + myDoctor2.speciality);
+        myDoctor2.showId();
+
+        Patient paciente1 = new Patient("Vero", "veronica@gmail.com");
+        paciente1.showData();
     }
 
 }
