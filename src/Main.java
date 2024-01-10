@@ -13,8 +13,14 @@ public class Main {
         System.out.println("myDoctor2 = " + myDoctor2.speciality);
         myDoctor2.showId();
 
+        // clase paciente
         Patient paciente1 = new Patient("Vero", "veronica@gmail.com");
         paciente1.showData();
+        paciente1.setHeight(1.54);
+        System.out.println("paciente1.getHeight() = " + paciente1.getHeight());
+        paciente1.setWeight(54.5);
+        System.out.println("paciente1.getWeight() = " + paciente1.getWeight());
+
     }
 
 }
