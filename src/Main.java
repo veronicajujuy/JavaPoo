@@ -21,6 +21,34 @@ public class Main {
         paciente1.setWeight(54.5);
         System.out.println("paciente1.getWeight() = " + paciente1.getWeight());
 
+        // variables y objetos
+        int i = 0;
+        System.out.println("i = " + i);
+           int b = 2;
+        System.out.println("b = " + b);
+        b = i;
+        System.out.println("b = " + b);
+
+        Patient patient1 = new Patient("Juan", "JuanPerez@gmail.com");
+        Patient patient2 = new Patient("Julia", "Julia@gmail.com");
+        System.out.println("patient1 = " + patient1);
+        System.out.println("patient1 = " + patient1.getName());
+        System.out.println("patient2 = " + patient2);
+        System.out.println("patient2 = " + patient2.getName());
+
+        patient2 = patient1;
+        System.out.println("patient1 = " + patient1);
+        System.out.println("patient2 = " + patient2);
+        System.out.println("patient1 = " + patient1.getName());
+        System.out.println("patient2 = " + patient2.getName());
+
+        patient2.setName("Vanina");
+
+        System.out.println("patient1 = " + patient1);
+        System.out.println("patient2 = " + patient2);
+        System.out.println("patient1 = " + patient1.getName());
+        System.out.println("patient3 = " + patient2.getName());
+
     }
 
 }
