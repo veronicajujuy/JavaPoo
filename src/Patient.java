@@ -35,4 +35,9 @@ public class Patient extends User{
     public void setHeight(double height) {
         this.height = height;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n Age: "+ birthday + "\n Weight: "+ getWeight() + "\n Height: "+ getHeight();
+    }
 }

@@ -46,6 +46,8 @@ public class Main {
         System.out.println("patient1 = " + patient1.getName());
         System.out.println("patient3 = " + patient2.getName());
 
+     System.out.println("paciente1 = " + paciente1);
+
     }
 
 }
