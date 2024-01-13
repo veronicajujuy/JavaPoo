@@ -1,8 +1,12 @@
-public class Patient extends User{
+package model;
+
+import model.User;
+
+public class Patient extends User {
     private String birthday, blood;
     private double weight, height;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name,email);
     }
 
