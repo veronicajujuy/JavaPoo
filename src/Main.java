@@ -1,5 +1,6 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -50,7 +51,11 @@ public class Main {
         System.out.println("patient3 = " + patient2.getName());
 
      System.out.println("paciente1 = " + paciente1);
-
+     // creo una nueva instancia de doctor pero utilizando user. Como user es abstracto no puedo instanciarlo
+     User user = new Doctor("Dr. Analia Sanchez", "analia@gmail.com", "Oculista");
+     user.showDataUser();
+     User userPac = new Patient("Vanesa", "analia@gmail.com");
+     userPac.showDataUser();
     }
 
 }

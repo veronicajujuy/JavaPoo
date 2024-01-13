@@ -2,6 +2,8 @@ package model;
 
 import model.User;
 
+import java.sql.SQLOutput;
+
 public class Patient extends User {
     private String birthday, blood;
     private double weight, height;
@@ -43,5 +45,11 @@ public class Patient extends User {
     @Override
     public String toString() {
         return super.toString() + "\n Age: "+ birthday + "\n Weight: "+ getWeight() + "\n Height: "+ getHeight();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente");
+        System.out.println("Historial: ....");
     }
 }
